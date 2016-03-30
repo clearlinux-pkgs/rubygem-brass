@@ -4,7 +4,7 @@
 #
 Name     : rubygem-brass
 Version  : 1.2.1
-Release  : 3
+Release  : 4
 URL      : https://rubygems.org/downloads/brass-1.2.1.gem
 Source0  : https://rubygems.org/downloads/brass-1.2.1.gem
 Summary  : No detailed summary available
@@ -50,47 +50,21 @@ fi
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost
-pushd %{buildroot}%{gem_dir}/gems/brass-1.2.1
-popd
+pushd %{buildroot}%{gem_dir}/gems/brass-1.2.1 && rubytest -I.:lib:test test/case_brass.rb && popd
 
 
 %files
 %defattr(-,root,root,-)
-/usr/lib64/ruby/gems/2.2.0/cache/brass-1.2.1.gem
-/usr/lib64/ruby/gems/2.2.0/doc/brass-1.2.1/ri/Exception/assertion%3f-i.ri
-/usr/lib64/ruby/gems/2.2.0/doc/brass-1.2.1/ri/Exception/cdesc-Exception.ri
-/usr/lib64/ruby/gems/2.2.0/doc/brass-1.2.1/ri/Exception/set_assertion-i.ri
-/usr/lib64/ruby/gems/2.2.0/doc/brass-1.2.1/ri/Exception/set_message-i.ri
-/usr/lib64/ruby/gems/2.2.0/doc/brass-1.2.1/ri/Kernel/assert-c.ri
-/usr/lib64/ruby/gems/2.2.0/doc/brass-1.2.1/ri/Kernel/assert-i.ri
-/usr/lib64/ruby/gems/2.2.0/doc/brass-1.2.1/ri/Kernel/cdesc-Kernel.ri
-/usr/lib64/ruby/gems/2.2.0/doc/brass-1.2.1/ri/Kernel/expect-i.ri
-/usr/lib64/ruby/gems/2.2.0/doc/brass-1.2.1/ri/Kernel/fail%21-c.ri
-/usr/lib64/ruby/gems/2.2.0/doc/brass-1.2.1/ri/Kernel/fail%21-i.ri
-/usr/lib64/ruby/gems/2.2.0/doc/brass-1.2.1/ri/Kernel/refute-c.ri
-/usr/lib64/ruby/gems/2.2.0/doc/brass-1.2.1/ri/Kernel/refute-i.ri
-/usr/lib64/ruby/gems/2.2.0/doc/brass-1.2.1/ri/MiniTest/Unit/cdesc-Unit.ri
-/usr/lib64/ruby/gems/2.2.0/doc/brass-1.2.1/ri/MiniTest/cdesc-MiniTest.ri
-/usr/lib64/ruby/gems/2.2.0/doc/brass-1.2.1/ri/Test/Unit/BrassAssertionHandler/add_brass_failure-i.ri
-/usr/lib64/ruby/gems/2.2.0/doc/brass-1.2.1/ri/Test/Unit/BrassAssertionHandler/cdesc-BrassAssertionHandler.ri
-/usr/lib64/ruby/gems/2.2.0/doc/brass-1.2.1/ri/Test/Unit/BrassAssertionHandler/handle_brass_assertion_failed_error-i.ri
-/usr/lib64/ruby/gems/2.2.0/doc/brass-1.2.1/ri/Test/Unit/BrassAssertionHandler/included-c.ri
-/usr/lib64/ruby/gems/2.2.0/doc/brass-1.2.1/ri/Test/Unit/TestCase/cdesc-TestCase.ri
-/usr/lib64/ruby/gems/2.2.0/doc/brass-1.2.1/ri/Test/Unit/cdesc-Unit.ri
-/usr/lib64/ruby/gems/2.2.0/doc/brass-1.2.1/ri/Test/cdesc-Test.ri
-/usr/lib64/ruby/gems/2.2.0/doc/brass-1.2.1/ri/cache.ri
-/usr/lib64/ruby/gems/2.2.0/doc/brass-1.2.1/ri/page-COPYING_rdoc.ri
-/usr/lib64/ruby/gems/2.2.0/doc/brass-1.2.1/ri/page-HISTORY_rdoc.ri
-/usr/lib64/ruby/gems/2.2.0/doc/brass-1.2.1/ri/page-README_md.ri
-/usr/lib64/ruby/gems/2.2.0/gems/brass-1.2.1/.ruby
-/usr/lib64/ruby/gems/2.2.0/gems/brass-1.2.1/.yardopts
-/usr/lib64/ruby/gems/2.2.0/gems/brass-1.2.1/COPYING.rdoc
-/usr/lib64/ruby/gems/2.2.0/gems/brass-1.2.1/HISTORY.rdoc
-/usr/lib64/ruby/gems/2.2.0/gems/brass-1.2.1/README.md
-/usr/lib64/ruby/gems/2.2.0/gems/brass-1.2.1/lib/brass.rb
-/usr/lib64/ruby/gems/2.2.0/gems/brass-1.2.1/lib/brass/adapters/minitest.rb
-/usr/lib64/ruby/gems/2.2.0/gems/brass-1.2.1/lib/brass/adapters/testunit.rb
-/usr/lib64/ruby/gems/2.2.0/gems/brass-1.2.1/lib/brass/adapters/testunit1.rb
-/usr/lib64/ruby/gems/2.2.0/gems/brass-1.2.1/lib/brass/expect.rb
-/usr/lib64/ruby/gems/2.2.0/gems/brass-1.2.1/test/case_brass.rb
-/usr/lib64/ruby/gems/2.2.0/specifications/brass-1.2.1.gemspec
+/usr/lib64/ruby/gems/2.3.0/cache/brass-1.2.1.gem
+/usr/lib64/ruby/gems/2.3.0/gems/brass-1.2.1/.ruby
+/usr/lib64/ruby/gems/2.3.0/gems/brass-1.2.1/.yardopts
+/usr/lib64/ruby/gems/2.3.0/gems/brass-1.2.1/COPYING.rdoc
+/usr/lib64/ruby/gems/2.3.0/gems/brass-1.2.1/HISTORY.rdoc
+/usr/lib64/ruby/gems/2.3.0/gems/brass-1.2.1/README.md
+/usr/lib64/ruby/gems/2.3.0/gems/brass-1.2.1/lib/brass.rb
+/usr/lib64/ruby/gems/2.3.0/gems/brass-1.2.1/lib/brass/adapters/minitest.rb
+/usr/lib64/ruby/gems/2.3.0/gems/brass-1.2.1/lib/brass/adapters/testunit.rb
+/usr/lib64/ruby/gems/2.3.0/gems/brass-1.2.1/lib/brass/adapters/testunit1.rb
+/usr/lib64/ruby/gems/2.3.0/gems/brass-1.2.1/lib/brass/expect.rb
+/usr/lib64/ruby/gems/2.3.0/gems/brass-1.2.1/test/case_brass.rb
+/usr/lib64/ruby/gems/2.3.0/specifications/brass-1.2.1.gemspec
